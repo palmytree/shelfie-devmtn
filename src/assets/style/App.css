@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600&display=swap');
 
 * {
-  box-sizing: border-box !important;
-  scroll-behavior: smooth;
+	box-sizing: border-box !important;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -27,19 +27,19 @@ header > img {
 }
 
 .nav-link {
-  background-color: #ed6b5a;
-  border-radius: 5px;
-  border: 1px solid #D34735;
-  padding: 5px 10px;
-  text-decoration: none;
-  color: black;
-  margin: 5px;
-  font-weight: bold;
+	background-color: #ed6b5a;
+	border-radius: 5px;
+	border: 1px solid #d34735;
+	padding: 5px 10px;
+	text-decoration: none;
+	color: black;
+	margin: 5px;
+	font-weight: bold;
 }
 
 .nav-link:hover {
-  background-color: maroon;
-  color: white;
+	background-color: maroon;
+	color: white;
 }
 
 h2 {
@@ -60,37 +60,42 @@ h4,
 }
 
 h5 {
-  font-size: 1.1rem;
-  width: 100%;
+	font-size: 1.1rem;
+	width: 100%;
+}
+
+input {
+	border-radius: 5px;
+	padding: 2px;
 }
 
 button {
 	height: 2rem;
-  padding: 0 10px;
-  border: 1px solid;
-  border-radius: 5px;
-  font-weight: 800;
+	padding: 0 10px;
+	border: 1px solid;
+	border-radius: 5px;
+	font-weight: 800;
 }
 
 button:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 #cancel-btn:hover,
 #edit-btn:hover {
-  background-color: lightgoldenrodyellow;
-  color: darkgoldenrod;
+	background-color: lightgoldenrodyellow;
+	color: darkgoldenrod;
 }
 
 #save-btn:hover {
-  background-color: white;
-  border: 1px solid darkgreen;
-  color: darkgreen;
+	background-color: white;
+	border: 1px solid darkgreen;
+	color: darkgreen;
 }
 
 #delete-btn:hover {
-  background-color: lightpink;
-  color: darkred;
+	background-color: lightpink;
+	color: darkred;
 }
 
 .App,
@@ -145,8 +150,8 @@ header,
 
 .prod-card-img {
 	height: auto;
-  width: 40%;
-  min-width: 250px;
+	width: 40%;
+	min-width: 250px;
 }
 
 .prod-card-field {
@@ -161,7 +166,7 @@ header,
 }
 
 .card-btn {
-  background-color: #3AD886;
+	background-color: #3ad886;
 }
 
 #sName,
@@ -169,85 +174,121 @@ header,
 #sImg {
 	width: 95%;
 	border: 1px solid lightgray;
-  margin-bottom: 2px;
+	margin-bottom: 2px;
 }
 
 .add-form-cont {
-  background-color: #3AD886;
-  width: 40vw;
-  height: 50vh;
-  min-height: 400px;
-  padding: 10px;
-  border-radius: 10px;
-  position: relative;
+	background-color: #3ad886;
+	width: 40vw;
+	height: 50vh;
+	min-height: 400px;
+	padding: 10px;
+	border-radius: 10px;
+	position: relative;
 }
 
 .add-form-img {
-  width: auto;
-  height: 50%;
+	width: auto;
+	height: 50%;
 }
 
 .add-form-btn-cont,
 .add-form-field,
 .add-form-field-cont,
 .add-form-allfields {
-  width: 100%;
+	width: 100%;
 }
 
 .add-form-allfields {
-  height: 35%;
-  justify-content: space-around;
+	height: 35%;
+	justify-content: space-around;
 }
 
-
 .btt-btn {
-  height: 70px;
-  width: 70px;
-  background-color: #ed6b5a;
-  position: fixed;
-  bottom: 5px;
-  right: 5px;
-  border-radius: 5px;
-  animation: btt-in 200ms linear;
+	height: 70px;
+	width: 70px;
+	background-color: #ed6b5a;
+	position: fixed;
+	bottom: 5px;
+	right: 10px;
+	border-radius: 5px;
+	animation: btt-in 200ms linear;
 }
 
 .btt-btn:hover {
-  cursor: pointer;
-  color: white;
-  background-color: #ab2a19;
-  transition: all 100ms linear;
+	cursor: pointer;
+	color: white;
+	background-color: #ab2a19;
+	transition: all 100ms linear;
 }
 
 .hide-btt {
-  animation: btt-out 200ms linear;
-  transform: translateY(100px) !important;
-  opacity: 0 !important;
+	animation: btt-out 200ms linear;
+	transform: translateY(100px) !important;
+	opacity: 0 !important;
 }
 
 @keyframes btt-in {
-  from {
-    transform: translateY(100px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0px);
-    opacity: 1;
-  }
+	from {
+		transform: translateY(100px);
+		opacity: 0;
+	}
+	to {
+		transform: translateY(0px);
+		opacity: 1;
+	}
 }
 
 @keyframes btt-out {
-  from {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-  to {
-    transform: translateY(100px);
-    opacity: 0;
-  }
+	from {
+		transform: translateY(0px);
+		opacity: 1;
+	}
+	to {
+		transform: translateY(100px);
+		opacity: 0;
+	}
 }
 
 @keyframes btt-pulse {
-  from {
+	from {
+	}
+}
 
+@media (max-width: 975px) {
+	.prod-card {
+		width: 90vw;
+  }
+  .btt-btn {
+    border: 1px solid black;
+  }
+}
+
+@media (max-width: 600px) {
+  header > img {
+    margin-left: 5px;
+  }
+  header > h2 {
+    display: none;
+  }
+	.prod-card {
+		width: 95vw;
+  }
+  
+}
+
+@media (max-width: 475px) {
+  .prod-card,
+  .prod-card-sub-cont {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 95vw;
+    padding: 5px;
+  }
+  .prod-card-img {
+    width: 100%;
+    height: auto;
+    padding: 0;
   }
 }
