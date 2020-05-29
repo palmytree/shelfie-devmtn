@@ -6,3 +6,4 @@
 - Added back-to-top button that slides into view when user scrolls down dashboard
 - Added confirmation message on delete
 - Added responsive design
+- Served react app through static build
