@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600&display=swap');
+
+* {
+  box-sizing: border-box !important;
+  scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	position: relative;
+}
+
+header {
+	height: 80px;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	background-color: #ab2a19;
+	padding-left: 50px;
+}
+
+header > img {
+	margin-left: 50px;
+	height: 50px;
+	width: 50px;
+}
+
+.nav-link {
+  background-color: #ed6b5a;
+  border-radius: 5px;
+  border: 1px solid #D34735;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: black;
+  margin: 5px;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  background-color: maroon;
+  color: white;
+}
+
+h2 {
+	font-size: 2rem;
+	color: white;
+	margin: 0 20px;
+}
+
+h3,
+#sName {
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+h4,
+#sPrice {
+	font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.1rem;
+  width: 100%;
+}
+
+button {
+	height: 2rem;
+  padding: 0 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  font-weight: 800;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#cancel-btn:hover,
+#edit-btn:hover {
+  background-color: lightgoldenrodyellow;
+  color: darkgoldenrod;
+}
+
+#save-btn:hover {
+  background-color: white;
+  border: 1px solid darkgreen;
+  color: darkgreen;
+}
+
+#delete-btn:hover {
+  background-color: lightpink;
+  color: darkred;
+}
+
+.App,
+.prod-card,
+.prod-card-sub-cont,
+.dash-cont,
+.add-form-cont,
+.add-form-btn-cont,
+.prod-card-btn-cont,
+.add-form-field-cont,
+.add-form-allfields,
+header {
+	display: flex;
+}
+
+.App,
+.prod-card-sub-cont,
+.add-form-cont,
+.add-form-field-cont,
+.add-form-allfields,
+.dash-cont {
+	flex-direction: column;
+}
+
+.App,
+header,
+.add-form-cont {
+	align-items: center;
+}
+
+.app-body-cont {
+	margin-top: 100px;
+}
+
+.prod-card {
+	border: 1px solid black;
+	border-radius: 10px;
+	width: 50vw;
+	min-width: 400px;
+	background-color: #ed6b5a;
+}
+
+.prod-card,
+.prod-card-sub-cont {
+	margin: 10px;
+}
+
+.prod-card-sub-cont {
+	justify-content: space-between;
+	width: 50%;
+}
+
+.prod-card-img {
+	height: auto;
+  width: 40%;
+  min-width: 250px;
+}
+
+.prod-card-field {
+	padding: 0 0 10px 0;
+	width: 100%;
+}
+
+.prod-card-btn-cont,
+.add-form-btn-cont,
+.add-form-cont {
+	justify-content: space-between;
+}
+
+.card-btn {
+  background-color: #3AD886;
+}
+
+#sName,
+#sPrice,
+#sImg {
+	width: 95%;
+	border: 1px solid lightgray;
+  margin-bottom: 2px;
+}
+
+.add-form-cont {
+  background-color: #3AD886;
+  width: 40vw;
+  height: 50vh;
+  min-height: 400px;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.add-form-img {
+  width: auto;
+  height: 50%;
+}
+
+.add-form-btn-cont,
+.add-form-field,
+.add-form-field-cont,
+.add-form-allfields {
+  width: 100%;
+}
+
+.add-form-allfields {
+  height: 35%;
+  justify-content: space-around;
+}
+
+
+.btt-btn {
+  height: 70px;
+  width: 70px;
+  background-color: #ed6b5a;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  border-radius: 5px;
+  animation: btt-in 200ms linear;
+}
+
+.btt-btn:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #ab2a19;
+  transition: all 100ms linear;
+}
+
+.hide-btt {
+  animation: btt-out 200ms linear;
+  transform: translateY(100px) !important;
+  opacity: 0 !important;
+}
+
+@keyframes btt-in {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes btt-out {
+  from {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+}
+
+@keyframes btt-pulse {
+  from {
+
+  }
+}
